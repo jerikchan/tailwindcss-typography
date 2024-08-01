@@ -192,12 +192,12 @@ let defaultModifiers = {
           paddingBottom: em(8, 14),
           paddingInlineStart: em(8, 14),
         },
-        'tbody td:first-child, tfoot td:first-child': {
-          paddingInlineStart: '0',
-        },
-        'tbody td:last-child, tfoot td:last-child': {
-          paddingInlineEnd: '0',
-        },
+        // 'tbody td:first-child, tfoot td:first-child': {
+        //   paddingInlineStart: '0',
+        // },
+        // 'tbody td:last-child, tfoot td:last-child': {
+        //   paddingInlineEnd: '0',
+        // },
         figure: {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
@@ -451,6 +451,8 @@ module.exports = {
           color: 'var(--tw-prose-headings)',
           fontWeight: '600',
           verticalAlign: 'bottom',
+          borderWidth: '1px',
+          borderColor: 'var(--tw-prose-th-borders)',
         },
         'tbody tr': {
           borderBottomWidth: '1px',
@@ -461,6 +463,8 @@ module.exports = {
         },
         'tbody td': {
           verticalAlign: 'baseline',
+          borderWidth: '1px',
+          borderColor: 'var(--tw-prose-th-borders)',
         },
         tfoot: {
           borderTopWidth: '1px',
